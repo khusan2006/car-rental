@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Navbar: FC = () => {
   return (
-    <header className="flex justify-between items-center pt-6 ">
+    <header className="flex justify-between items-center pt-6 px-6">
       <img src={logo} alt="logo" className="w-42 h-12" />
       <nav>
         <ul className="flex gap-6 font-rubik font-medium capitalize">

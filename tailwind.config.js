@@ -21,6 +21,10 @@ module.exports = {
         'rubik': ["Rubik", "sans-serif"],
         'poppins': ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        'hero-bg': "url('/assets/hero-bg.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

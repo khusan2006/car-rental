@@ -1,12 +1,14 @@
-import Hero from '@/components/Hero';
-import  {FC} from 'react';
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import { FC } from "react";
 
-const Home: FC = ()  => {
+const Home: FC = () => {
   return (
-    <div className='px-6'>
-     <Hero />
+    <div className="bg-[url(assets/hero-bg.png)] bg-no-repeat  min-h-[150vh] bg-right">
+      <Navbar />
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
