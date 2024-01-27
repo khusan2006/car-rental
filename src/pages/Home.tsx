@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import BookCar from "@/components/BookCar";
 import Cars from "@/components/Cars";
 import Hero from "@/components/Hero";
@@ -13,6 +14,7 @@ const Home: FC = () => {
       <BookCar />
       <Plan />
       <Cars />
+      <Banner />
     </div>
 
   );
