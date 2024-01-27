@@ -7,7 +7,7 @@ const Navbar: FC = () => {
     <header className="flex justify-between items-center pt-6 px-6">
       <img src={logo} alt="logo" className="w-42 h-12" />
       <nav>
-        <ul className="flex gap-6 font-rubik font-medium capitalize">
+        <ul className="flex gap-6 font-rubik text-[1.125rem] font-medium capitalize">
           <li>
             <a href="">Home</a>
           </li>
@@ -29,10 +29,10 @@ const Navbar: FC = () => {
         </ul>
       </nav>
       <div className="flex">
-        <Button variant={'link'} size={'lg'} className="font-bold">
+        <Button variant={'link'} size={'lg'} className="font-bold text-[1.125rem]">
             Sign in
         </Button>
-        <Button size={'lg'}>
+        <Button size={'lg'} className="text-[1.125rem]">
             Register
         </Button>
       </div>
