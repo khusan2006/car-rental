@@ -6,9 +6,9 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 const Hero: FC = () => {
   return (
     <section className='px-6 flex pt-8 font-rubik'>
-      <div className='flex flex-col justify-center pb-8'>
+      <div className='flex flex-col justify-center pb-8 flex-3'>
         <h3 className='font-bold text-2xl mb-2'>Plan your trip now</h3>
-        <h1 className='font-bold text-[3.2rem]/[60px] font-poppins mb-4'>
+        <h1 className='font-bold text-[3.6rem]/[65px] font-poppins mb-4'>
         Save <span className='text-orange-600'>big</span> with our car rental
         </h1>
         <p className='font-normal text-base text-gray-600 mb-6'>
@@ -23,7 +23,7 @@ const Hero: FC = () => {
           </Button>
         </div>
       </div>
-      <div className=''>
+      <div className='flex-2'>
         <img className='w-[80rem]' src={heroCar} alt="picture of car" />
       </div>
     </section>

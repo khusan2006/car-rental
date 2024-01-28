@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 const ChooseUS = () => {
   return (
-    <section className="flex flex-col items-center mt-20">
+    <section className="flex flex-col items-center py-20">
       <div className="w-[80vw]">
         <img className="w-full" src={MainImg} alt="picture of cars" />
       </div>

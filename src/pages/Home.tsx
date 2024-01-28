@@ -5,6 +5,7 @@ import ChooseUS from "@/components/ChooseUS";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Plan from "@/components/Plan";
+import Testimonials from "@/components/Testimonials";
 import { FC } from "react";
 
 const Home: FC = () => {
@@ -17,6 +18,7 @@ const Home: FC = () => {
       <Cars />
       <Banner />
       <ChooseUS />
+      <Testimonials />
     </div>
 
   );
