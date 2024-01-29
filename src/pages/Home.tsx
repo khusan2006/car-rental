@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Plan from "@/components/Plan";
+import ResponsiveNavbar from "@/components/ResponsiveNavbar";
 import Testimonials from "@/components/Testimonials";
 import { FC } from "react";
 
@@ -15,7 +16,8 @@ const Home: FC = () => {
   return (
     <div className="bg-[url(assets/hero-bg.png)] bg-no-repeat  min-h-[150vh] bg-right-top">
       <Navbar />
-      <main>
+      <ResponsiveNavbar />
+      {/* <main>
         <Hero />
         <BookCar />
         <Plan />
@@ -26,7 +28,7 @@ const Home: FC = () => {
         <Faq />
         <Download />
       </main>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
