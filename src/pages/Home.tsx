@@ -19,8 +19,8 @@ const Home: FC = () => {
       <ResponsiveNavbar />
       <main>
         <Hero />
-        {/* <BookCar />
-        <Plan />
+        <BookCar />
+        {/* <Plan />
         <Cars />
         <Banner />
         <ChooseUS />

@@ -28,7 +28,7 @@ const BookCar: FC = () => {
     <section className="flex justify-center px-6 pt-6 font-poppins">
       <div className="w-full shadow-lg bg-white pb-20 p-12 rounded-md bg-[url(assets/book-bg.png)]">
         <h4 className="font-poppins font-bold text-2xl">Book a car</h4>
-        <div className="grid grid-cols-3 gap-8 pt-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 pt-4">
           <SelectGroup>
             <SelectLabel className=" pl-0 pb-[0.7rem] flex items-center font-semibold text-base">
 
