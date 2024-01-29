@@ -16,7 +16,7 @@ const ResponsiveNavbar = () => {
       <div
         className={`${
           isMenuOpen ? "translate-x-[0]" : "translate-x-[-100%]"
-        } transition-all fixed z-[100] h-screen w-screen left-0 top-0 flex flex-col items-center justify-center bg-white`}
+        } transition-all duration-500 fixed z-[100] h-screen w-screen left-0 top-0 flex flex-col items-center justify-center bg-white`}
       >
         <X
           onClick={() => setIsMenuOpen(false)}

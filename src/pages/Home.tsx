@@ -17,18 +17,18 @@ const Home: FC = () => {
     <div className="bg-[url(assets/hero-bg.png)] bg-no-repeat  min-h-[150vh] bg-right-top">
       <Navbar />
       <ResponsiveNavbar />
-      {/* <main>
+      <main>
         <Hero />
-        <BookCar />
+        {/* <BookCar />
         <Plan />
         <Cars />
         <Banner />
         <ChooseUS />
         <Testimonials />
         <Faq />
-        <Download />
+        <Download /> */}
       </main>
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
