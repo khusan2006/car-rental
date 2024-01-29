@@ -24,8 +24,8 @@ const Home: FC = () => {
         <Cars />
         <Banner />
         <ChooseUS />
-        {/* <Testimonials />
-        <Faq />
+        <Testimonials />
+        {/* <Faq />
         <Download /> */}
       </main>
       {/* <Footer /> */}
