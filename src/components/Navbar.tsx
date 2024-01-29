@@ -32,7 +32,7 @@ const Navbar: FC = () => {
         <Button variant={'link'} size={'lg'} className="font-bold text-[1.125rem]">
             Sign in
         </Button>
-        <Button size={'lg'} className="text-[1.125rem]">
+        <Button size={'lg'}>
             Register
         </Button>
       </div>

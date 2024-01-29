@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import BookCar from "@/components/BookCar";
 import Cars from "@/components/Cars";
 import ChooseUS from "@/components/ChooseUS";
+import Download from "@/components/Download";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -21,6 +22,7 @@ const Home: FC = () => {
       <ChooseUS />
       <Testimonials />
       <Faq />
+      <Download />
     </div>
 
   );
