@@ -18,8 +18,8 @@ const CarDetail = ({ car }: CarDetailProps) => {
     fuel,
   } = car;
   return (
-    <div className="flex gap-20">
-      <div className="flex-2 flex items-center justify-center">
+    <div className="flex flex-col md:flex-row gap-8 lg:gap-20">
+      <div className="flex-1 lg:flex-2 flex items-center justify-center">
         <img className="w-[40rem]" src={img} alt={name} />
       </div>
       <div className="flex-1">

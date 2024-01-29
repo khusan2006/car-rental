@@ -8,15 +8,15 @@ const Cars: FC = () => {
     <section className="px-6 py-32">
       <div className="flex flex-col items-center">
         <h3 className="font-rubik text-2xl font-medium pb-2">Vehicle Models</h3>
-        <h4 className="font-poppins font-bold text-[2.7rem] pb-2">
+        <h4 className="font-poppins font-bold text-[2.7rem] pb-2 text-center">
           Our rental fleet
         </h4>
-        <p className="font-rubik text-base font-normal text-gray-700">
+        <p className="font-rubik text-base font-normal text-gray-700 md:w-full w-full sm:w-[65%] text-center ">
           Choose from a variety of our amazing vehicles to rent for your next
           adventure or business trip
         </p>
       </div>
-      <div className="flex mt-10 gap-16">
+      <div className="flex mt-10 gap-16 lg:flex-row flex-col ">
         <div className="flex flex-col flex-1 gap-3">
           {CAR_DATA.map((car) => (
             <Button
