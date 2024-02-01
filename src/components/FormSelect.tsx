@@ -1,8 +1,8 @@
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "./ui/select";
-import { SelectInputProps } from "@/lib/types";
+import { FormSelectProps } from "@/lib/types";
 
-const SelectInput = ({ form, label, data, name }: SelectInputProps) => {
+const FormSelect = ({ form, label, data, name }: FormSelectProps) => {
   return (
     <>
       <FormField
@@ -37,4 +37,4 @@ const SelectInput = ({ form, label, data, name }: SelectInputProps) => {
   );
 };
 
-export default SelectInput;
+export default FormSelect;

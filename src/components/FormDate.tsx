@@ -11,13 +11,13 @@ import { cn } from "@/lib/utils";
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { Calendar } from "./ui/calendar";
-import { DateInputProps } from "@/lib/types";
+import { FormDateProps } from "@/lib/types";
 
 const disablePastDays = {
     before: new Date(),
   };
 
-const DateInput = ({ label, form, name }: DateInputProps) => {
+const FormDate = ({ label, form, name }: FormDateProps) => {
   return (
     <>
       <FormField
@@ -67,4 +67,4 @@ const DateInput = ({ label, form, name }: DateInputProps) => {
   );
 };
 
-export default DateInput;
+export default FormDate;

@@ -1,6 +1,6 @@
 import { CalendarIcon, MapPin, Car } from "lucide-react";
-import DateInput from "./DateInput";
-import SelectInput from "./SelectInput";
+import FormDate from "./FormDate";
+import FormSelect from "./FormSelect";
 import { Form } from "./ui/form";
 import { useForm } from "react-hook-form";
 import { locations } from "@/data/locations";
@@ -9,21 +9,22 @@ import { Button } from "./ui/button";
 import { schema } from "@/lib/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-
-type FormComponentProps = {
+import { useBookCarContext } from "@/context/BookCarContext";
+type BookFormProps = {
   setIsAlertOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 type FormData = z.infer<typeof schema>;
-const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
+const BookForm = ({ setIsAlertOpen }: BookFormProps) => {
   const form = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
+  const { setPayload } = useBookCarContext();
+  // handling form submission
   const onSubmit = (data: FormData) => {
-    // Handle form submission logic here
+    setPayload(data);
     setIsAlertOpen(true);
-    console.log(data);
   };
   return (
     <Form {...form}>
@@ -31,7 +32,7 @@ const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
         onSubmit={form.handleSubmit(onSubmit)}
         className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 pt-4"
       >
-        <SelectInput
+        <FormSelect
           form={form}
           data={carNames}
           name="car"
@@ -41,7 +42,7 @@ const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
             </>
           }
         />
-        <SelectInput
+        <FormSelect
           form={form}
           name="pickup"
           data={locations}
@@ -51,7 +52,7 @@ const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
             </>
           }
         />
-        <SelectInput
+        <FormSelect
           label={
             <>
               <MapPin className="h-6 w-6 mr-2" /> Drop-of
@@ -61,7 +62,7 @@ const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
           form={form}
           name="dropof"
         />
-        <DateInput
+        <FormDate
           label={
             <>
               <CalendarIcon className="h-6 w-6 mr-2" /> Pick-up
@@ -70,7 +71,7 @@ const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
           form={form}
           name="pickupDate"
         />
-        <DateInput
+        <FormDate
           label={
             <>
               <CalendarIcon className="h-6 w-6 mr-2" /> Drop of
@@ -85,4 +86,4 @@ const FormComponent = ({ setIsAlertOpen }: FormComponentProps) => {
   );
 };
 
-export default FormComponent;
+export default BookForm;

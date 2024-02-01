@@ -1,7 +1,8 @@
+import { CheckedState } from "@radix-ui/react-checkbox";
 import { ReactNode } from "react";
 import { UseFormReturn } from "react-hook-form";
 
-export type FormData = {
+export type BookFormData = {
     pickup: string;
     car: string;
     dropof: string;
@@ -9,14 +10,31 @@ export type FormData = {
     dropofDate: Date;
   };
 
- export type SelectInputProps = {
-    form: UseFormReturn<FormData, undefined>;
+  export type ConfirmFormData = {
+    firstname: string;
+    lastname: string;
+    email: string;
+    zipcode: string;
+    city: string,
+    age: string,
+    phone: string,
+    address: string, 
+    newsletter: CheckedState
+  };
+ export type FormSelectProps = {
+    form: UseFormReturn<BookFormData, undefined>;
     label: ReactNode;
     data: string[];
     name: "car" | "pickup" | "dropof" | "pickupDate" | "dropofDate";
   };
- export type DateInputProps = {
-    form: UseFormReturn<FormData, undefined>;
+ export type FormDateProps = {
+    form: UseFormReturn<BookFormData, undefined>;
     label: ReactNode;
     name: "car" | "pickup" | "dropof" | "pickupDate" | "dropofDate";
+  };
+
+ export type FormInputProps = {
+    form: UseFormReturn<ConfirmFormData, undefined>;
+    label: ReactNode;
+    name: "firstname" | "lastname" | "phone" | "age" | "email" | 'address' | 'city' | 'zipcode' | 'newsletter';
   };
