@@ -9,22 +9,22 @@ const Navbar: FC = () => {
       <nav className="">
         <ul className="flex  gap-6 font-rubik text-[1.125rem] font-medium capitalize">
           <li>
-            <a href="">Home</a>
+            <a className="hover:text-orange-600" href="">Home</a>
           </li>
           <li>
-            <a href="">about</a>
+            <a className="hover:text-orange-600" href="">about</a>
           </li>
           <li>
-            <a href="">vehicle models</a>
+            <a className="hover:text-orange-600" href="">vehicle models</a>
           </li>
           <li>
-            <a href="">testimonials</a>
+            <a className="hover:text-orange-600" href="">testimonials</a>
           </li>
           <li>
-            <a href="">our team</a>
+            <a className="hover:text-orange-600" href="">our team</a>
           </li>
           <li>
-            <a href="">contact</a>
+            <a className="hover:text-orange-600" href="">contact</a>
           </li>
         </ul>
       </nav>

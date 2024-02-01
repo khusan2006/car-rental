@@ -95,3 +95,5 @@ export const CAR_DATA: CarData[] = [
     fuel: "Gasoline",
   },
 ];
+
+export const carNames = ['VW Golf 6', 'Audi A1 S-Line', 'Toyota Camry',"BMW 320 ModernLine", "Mercedes-Benz GLK", "VW Passat CC"]

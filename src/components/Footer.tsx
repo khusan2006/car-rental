@@ -4,7 +4,7 @@ import { Input } from "./ui/input";
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 grid grid-cols-4 gap-16">
+    <footer className="py-20 px-6 grid sm:grid-cols-2  md:grid-cols-4 gap-16">
       <div>
         <h5 className="font-poppins text-2xl font-bold mb-4" >
           CAR <span className="font-normal"> Rental</span>

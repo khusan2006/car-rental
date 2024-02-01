@@ -9,7 +9,7 @@ const Faq = () => {
     <section className="py-20 bg-[url('assets/car.png')] bg-no-repeat bg-left-bottom">
       <div className="flex flex-col items-center">
         <h3 className="font-rubik text-2xl font-medium pb-2">FAQ</h3>
-        <h4 className="font-poppins font-bold text-[2rem] text-center md:text-start sm:text-[2.4rem] md:text-[2.7rem] pb-2">
+        <h4 className="font-poppins font-bold  text-center md:text-start text-[2rem] sm:text-[2.4rem] md:text-[2.7rem] pb-2">
           Frequently Asked Questions
         </h4>
         <p className="font-rubik text-base font-normal text-gray-700 w-[90%] sm:w-[70%] md:w-[50%] text-center">
