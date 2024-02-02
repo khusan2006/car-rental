@@ -1,15 +1,25 @@
 import { useForm } from "react-hook-form";
 import { Button } from "./ui/button";
 import FormInput from "./FormInput";
-import { ConfirmFormData } from "@/lib/types";
 import { Form } from "./ui/form";
 import FormCheckbox from "./FormCheckbox";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ConfirmFormSchema } from "@/lib/schema";
+import {  z } from "zod";
+import { useBookCarContext } from "@/context/BookCarContext";
+import { toast } from "sonner";
+
+type ConfirmFormData = z.infer<typeof ConfirmFormSchema>;
 
 const ConfirmForm = () => {
-  const form = useForm<ConfirmFormData>();
-
+  const {setIsAlertOpen} = useBookCarContext() 
+  const form = useForm<ConfirmFormData>({
+    resolver: zodResolver(ConfirmFormSchema),
+  });
   const onSubmit = (data: ConfirmFormData) => {
-    console.log(data);
+    setIsAlertOpen(false)
+    toast.success('rent has succesfully booked')
+    console.log(data)
   };
   return (
     <div>

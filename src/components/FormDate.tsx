@@ -14,10 +14,11 @@ import { Calendar } from "./ui/calendar";
 import { FormDateProps } from "@/lib/types";
 
 const disablePastDays = {
-    before: new Date(),
-  };
+  before: new Date(),
+};
 
 const FormDate = ({ label, form, name }: FormDateProps) => {
+ 
   return (
     <>
       <FormField

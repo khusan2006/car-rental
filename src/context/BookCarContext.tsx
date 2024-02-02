@@ -1,16 +1,16 @@
-import { BookFormData } from "@/lib/types";
 import { ReactNode, createContext, useContext, useState } from "react"
-type ContextType = {
-  payload: BookFormData | object,
-  setPayload:  React.Dispatch<React.SetStateAction<object | FormData>>
-}
+import { ContextType } from "@/lib/types";
 const bookCarContext = createContext<ContextType | null>(null);
 
 const BookCarProvider = ({children}: {children: ReactNode}) => {
   const [payload, setPayload] = useState<FormData | object >({})
+ const [isAlertOpen, setIsAlertOpen] = useState<boolean>(false)
+
   const intialValues = {
     payload, 
-    setPayload
+    setPayload,
+    isAlertOpen,
+    setIsAlertOpen
   }
   return (
     <bookCarContext.Provider value={intialValues}>

@@ -10,8 +10,8 @@ const ConfirmDescription = () => {
   const CarImage = CAR_DATA.find(carItem => carItem.name == car)?.img;
 
   return (
-    <div className="flex pt-6 px-2">
-      <div className="flex-1">
+    <div className="flex flex-col md:flex-row pt-6 px-2">
+      <div className="flex-1 flex flex-col items-center md:items-start">
         <h3 className="font-poppins text-orange-600 text-xl font-bold">
           Location & Date
         </h3>
@@ -72,7 +72,7 @@ const ConfirmDescription = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col items-center md:items-start mt-6 md:mt-0">
         <h3 className="font-poppins  text-xl font-bold">
           Car - <span className="text-orange-600">{car}</span>
         </h3>

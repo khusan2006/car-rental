@@ -1,11 +1,13 @@
-import Home from './pages/Home';
-function App() {
+import { Toaster } from "sonner";
+import Home from "./pages/Home";
 
+function App() {
   return (
     <>
-     <Home />
+      <Home />
+      <Toaster position="top-center" richColors />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

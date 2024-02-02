@@ -6,21 +6,19 @@ import { useForm } from "react-hook-form";
 import { locations } from "@/data/locations";
 import { carNames } from "@/data/CarData";
 import { Button } from "./ui/button";
-import { schema } from "@/lib/schema";
+import { BookFormSchema } from "@/lib/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useBookCarContext } from "@/context/BookCarContext";
-type BookFormProps = {
-  setIsAlertOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
 
-type FormData = z.infer<typeof schema>;
-const BookForm = ({ setIsAlertOpen }: BookFormProps) => {
+
+type FormData = z.infer<typeof BookFormSchema>;
+const BookForm = () => {
   const form = useForm<FormData>({
-    resolver: zodResolver(schema),
+    resolver: zodResolver(BookFormSchema),
   });
 
-  const { setPayload } = useBookCarContext();
+  const { setPayload, setIsAlertOpen } = useBookCarContext();
   // handling form submission
   const onSubmit = (data: FormData) => {
     setPayload(data);

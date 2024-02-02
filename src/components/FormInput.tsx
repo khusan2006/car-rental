@@ -16,9 +16,9 @@ const FormInput = ({ form, label, name }: FormInputProps) => {
       name={name}
       render={({ field }) => (
         <FormItem>
-          <FormLabel className="font-poppins text-base text-gray-600 font-medium capitalize">{label}</FormLabel>
+          <FormLabel className=" pl-0 pb-[0.7rem] flex items-center font-semibold text-base capitalize">{label}</FormLabel>
           <FormControl>
-            <Input placeholder="" {...field} />
+            <Input type={name === 'age' ? 'number' : ''} placeholder="" {...field} />
           </FormControl>
 
           <FormMessage />
