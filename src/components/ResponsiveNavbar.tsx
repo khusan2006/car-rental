@@ -2,9 +2,11 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import logo from "../assets/logo.png";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { loginWithRedirect, user, logout } = useAuth0();
 
   return (
     <header
@@ -46,14 +48,27 @@ const ResponsiveNavbar = () => {
           </ul>
         </nav>
         <div className="flex">
-          <Button
-            variant={"link"}
-            size={"lg"}
-            className="font-bold text-[1.125rem]"
-          >
-            Sign in
-          </Button>
-          <Button size={"lg"}>Register</Button>
+          {user ? (
+            <>
+              <Button size={"lg"} onClick={() => logout()}>
+                Log Out
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button
+                variant={"link"}
+                size={"lg"}
+                className="font-bold text-[1.125rem]"
+                onClick={() => loginWithRedirect()}
+              >
+                Sign in
+              </Button>
+              <Button size={"lg"} onClick={() => loginWithRedirect()}>
+                Register
+              </Button>
+            </>
+          )}
         </div>
       </div>
     </header>

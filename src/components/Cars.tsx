@@ -1,9 +1,13 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Button } from "./ui/button";
 import CarDetail from "./CarDetail";
 import { CAR_DATA } from "../data/CarData";
 
 const Cars: FC = () => {
+  const [currentCar, setCurrentCar] = useState(0);
+  const handleClick = (index: number) => {
+    setCurrentCar(index)
+  }
   return (
     <section className="px-6 py-32">
       <div className="flex flex-col items-center">
@@ -18,18 +22,19 @@ const Cars: FC = () => {
       </div>
       <div className="flex mt-10 gap-16 lg:flex-row flex-col ">
         <div className="flex flex-col flex-1 gap-3">
-          {CAR_DATA.map((car) => (
+          {CAR_DATA.map((car, index) => (
             <Button
               variant={"secondary"}
               size={"lg"}
-              className="px-12 py-[2.2rem] text-xl font-poppins font-semibold"
+              className={`px-12 py-[2.2rem] text-xl font-poppins font-semibold ${currentCar === index ? 'bg-orange-600 text-white' : ''}`}
+              onClick={() => handleClick(index)}
             >
               {car.name}
             </Button>
           ))}
         </div>
         <div className="flex-[4]">
-          <CarDetail car={CAR_DATA[0]} />
+          <CarDetail car={CAR_DATA[currentCar]} />
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ const ConfirmForm = () => {
     console.log(data)
   };
   return (
-    <div>
+    <div className="px-4 md:px-0">
       <h3 className="font-poppins text-xl text-orange-600 font-bold">
         PERSONAL INFORMATION
       </h3>

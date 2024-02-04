@@ -15,7 +15,7 @@ const ConfirmAlert = () => {
   const {setIsAlertOpen, isAlertOpen} = useBookCarContext()
   return (
     <Dialog open={isAlertOpen} onOpenChange={setIsAlertOpen}>
-      <DialogContent className="max-w-[80vw] max-h-[95vh] overflow-y-scroll p-0 md:p-[1.5rem]">
+      <DialogContent className="max-w-[100vw] md:max-w-[80vw] max-h-[95vh] overflow-y-scroll p-0 md:p-[1.5rem]">
         <DialogHeader>
           <DialogTitle className="text-white bg-orange-600 uppercase mt-2 p-4 font-poppins text-2xl">
             Complete reservation

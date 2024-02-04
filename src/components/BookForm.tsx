@@ -10,6 +10,7 @@ import { BookFormSchema } from "@/lib/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useBookCarContext } from "@/context/BookCarContext";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 type FormData = z.infer<typeof BookFormSchema>;
@@ -17,10 +18,14 @@ const BookForm = () => {
   const form = useForm<FormData>({
     resolver: zodResolver(BookFormSchema),
   });
-
+  const {isAuthenticated, loginWithRedirect} = useAuth0()
   const { setPayload, setIsAlertOpen } = useBookCarContext();
   // handling form submission
   const onSubmit = (data: FormData) => {
+    if(!isAuthenticated) {
+      loginWithRedirect();
+      return
+    }
     setPayload(data);
     setIsAlertOpen(true);
   };
