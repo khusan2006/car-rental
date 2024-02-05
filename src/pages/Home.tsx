@@ -4,7 +4,6 @@ import Cars from "@/components/Cars";
 import ChooseUS from "@/components/ChooseUS";
 import Download from "@/components/Download";
 import Faq from "@/components/Faq";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Plan from "@/components/Plan";
@@ -28,7 +27,6 @@ const Home: FC = () => {
         <Faq />
         <Download />
       </main>
-      <Footer />
     </div>
   );
 };

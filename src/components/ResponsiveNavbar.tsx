@@ -3,16 +3,21 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import logo from "../assets/logo.png";
 import { useAuth0 } from "@auth0/auth0-react";
+import { NavLink } from "react-router-dom";
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { loginWithRedirect, user, logout } = useAuth0();
-
+  const handleClick = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <header
       className={`flex relative lg:hidden justify-between py-4 px-8 sm:px-14 items-center`}
     >
-      <img src={logo} alt="logo" className="w-42 h-12" />
+      <NavLink to={"/"}>
+        <img src={logo} alt="logo" className="w-42 h-12" />
+      </NavLink>
 
       <Menu color="#000" onClick={() => setIsMenuOpen(true)} />
       <div
@@ -28,22 +33,34 @@ const ResponsiveNavbar = () => {
         <nav className="">
           <ul className="flex flex-col items-center mb-6 gap-6 font-rubik text-[1.125rem] font-medium capitalize">
             <li>
-              <a href="">Home</a>
+              <NavLink onClick={handleClick} to="/">
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="">about</a>
+              <NavLink onClick={handleClick} to="/about">
+                about
+              </NavLink>
             </li>
             <li>
-              <a href="">vehicle models</a>
+              <NavLink onClick={handleClick} to="/models">
+                vehicle models
+              </NavLink>
             </li>
             <li>
-              <a href="">testimonials</a>
+              <NavLink onClick={handleClick} to="/testimonials">
+                testimonials
+              </NavLink>
             </li>
             <li>
-              <a href="">our team</a>
+              <NavLink onClick={handleClick} to="/team">
+                our team
+              </NavLink>
             </li>
             <li>
-              <a href="">contact</a>
+              <NavLink onClick={handleClick} to="/contact">
+                contact
+              </NavLink>
             </li>
           </ul>
         </nav>
