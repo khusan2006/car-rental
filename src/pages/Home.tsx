@@ -4,11 +4,12 @@ import Cars from "@/components/Cars";
 import ChooseUS from "@/components/ChooseUS";
 import Download from "@/components/Download";
 import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Plan from "@/components/Plan";
 import ResponsiveNavbar from "@/components/ResponsiveNavbar";
-import Testimonials from "@/components/Testimonials";
+import TestimonialsComponent from "@/components/TestimonialsComponent";
 import { FC } from "react";
 
 const Home: FC = () => {
@@ -23,10 +24,11 @@ const Home: FC = () => {
         <Cars />
         <Banner />
         <ChooseUS />
-        <Testimonials />
+        <TestimonialsComponent />
         <Faq />
         <Download />
       </main>
+      <Footer />
     </div>
   );
 };

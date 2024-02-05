@@ -7,7 +7,7 @@ import Models from "./pages/Models";
 import Testimonials from "./pages/Testimonials";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
-import Layout from "./components/Layout";
+import PagesLayout from "./components/PagesLayout";
 
 function App() {
   return (
@@ -21,14 +21,14 @@ function App() {
       <Toaster />
       <BrowserRouter>
         <Routes>
-         <Route path="/" element={<Layout />}>
-         <Route path="/" index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/models" element={<Models />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-         </Route>
+          <Route path="/" index element={<Home />} />
+          <Route path="/" element={<PagesLayout />}>
+            <Route path="/about" element={<About />} />
+            <Route path="/models" element={<Models />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </Auth0Provider>

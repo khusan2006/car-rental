@@ -1,7 +1,7 @@
 import FirstImage from "../assets/pfp1.jpg";
 import SecondImage from "../assets/pfp2.jpg";
 
-const Testimonials = () => {
+const TestimonialsComponent = () => {
   return (
     <section className="bg-gray-100 px-6 md:px-0 py-20 flex flex-col items-center">
       <div className="flex flex-col items-center">
@@ -58,4 +58,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default TestimonialsComponent;

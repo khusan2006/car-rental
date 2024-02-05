@@ -5,7 +5,7 @@ import ThirdIcon from "../assets/icon3 (2).png";
 
 const Plan: FC = () => {
   return (
-    <section className="mt-36 flex flex-col items-center">
+    <section className="my-36 flex flex-col items-center">
       <h3 className="font-rubik text-2xl font-medium pb-2">
         Plan your trip now
       </h3>

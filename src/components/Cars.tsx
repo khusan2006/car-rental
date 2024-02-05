@@ -9,7 +9,7 @@ const Cars: FC = () => {
     setCurrentCar(index)
   }
   return (
-    <section className="px-6 py-32">
+    <section className="px-6 pb-32">
       <div className="flex flex-col items-center">
         <h3 className="font-rubik text-2xl font-medium pb-2">Vehicle Models</h3>
         <h4 className="font-poppins font-bold text-[2.7rem] pb-2 text-center">
