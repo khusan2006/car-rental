@@ -10,19 +10,8 @@ import MainToyota from "../assets/toyota-box.png";
 import MainBmw320 from "../assets/bmw-box.png";
 import MainBenz from "../assets/benz-box.png";
 import MainPassat from "../assets/passat-box.png";
-export type CarData = {
-  name: string;
-  price: string;
-  img: string;
-  model: string;
-  mark: string;
-  year: string;
-  doors: string;
-  air: string;
-  transmission: string;
-  fuel: string;
-  mainImg: string;
-};
+import { CarData } from "@/lib/types";
+
 export const CAR_DATA: CarData[] = [
   {
     name: "VW Golf 6",

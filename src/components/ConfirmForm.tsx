@@ -20,6 +20,7 @@ const ConfirmForm = () => {
     setIsAlertOpen(false)
     toast.success('rent has succesfully booked')
     console.log(data)
+    form.reset()
   };
   return (
     <div className="px-4 md:px-0">

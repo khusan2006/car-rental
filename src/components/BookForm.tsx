@@ -27,6 +27,7 @@ const BookForm = () => {
       return
     }
     setPayload(data);
+    form.reset();
     setIsAlertOpen(true);
   };
   return (

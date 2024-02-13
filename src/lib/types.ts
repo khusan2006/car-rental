@@ -32,8 +32,13 @@ export type FormDateProps = {
   name: "car" | "pickup" | "dropof" | "pickupDate" | "dropofDate";
 };
 
+export type ContactFormData = ConfirmFormData & {
+    fullname: string;
+    text: string;
+    email: string
+  }
 export type FormInputProps = {
-  form: UseFormReturn<ConfirmFormData, undefined>;
+  form: UseFormReturn<ContactFormData | ConfirmFormData, undefined>;
   label: ReactNode;
   name:
     | "firstname"
@@ -44,13 +49,34 @@ export type FormInputProps = {
     | "address"
     | "city"
     | "zipcode"
-    | "newsletter";
+    | "newsletter"
+    | "fullname"
+    | "text";
 };
 
-
 export type ContextType = {
-    payload: BookFormData | object,
-    setPayload:  React.Dispatch<React.SetStateAction<object | FormData>>
-    isAlertOpen: boolean,
-    setIsAlertOpen: React.Dispatch<React.SetStateAction<boolean>>
-  }
+  payload: BookFormData | object;
+  setPayload: React.Dispatch<React.SetStateAction<object | FormData>>;
+  isAlertOpen: boolean;
+  setIsAlertOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export type CarData = {
+  name: string;
+  price: string;
+  img: string;
+  model: string;
+  mark: string;
+  year: string;
+  doors: string;
+  air: string;
+  transmission: string;
+  fuel: string;
+  mainImg: string;
+};
+
+export type TeamData = {
+  img: string;
+  name: string;
+  position: string;
+};

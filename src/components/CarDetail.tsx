@@ -1,4 +1,4 @@
-import { CarData } from "@/data/CarData";
+import { CarData } from "@/lib/types";
 import { Button } from "./ui/button";
 
 type CarDetailProps = {

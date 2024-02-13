@@ -1,4 +1,4 @@
-import { CarData } from "@/data/CarData";
+import { CarData } from "@/lib/types";
 import Star from "@/assets/star-outline.svg";
 import { Car } from "lucide-react";
 import { Separator } from "./ui/separator";
