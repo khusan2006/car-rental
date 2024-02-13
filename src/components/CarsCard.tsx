@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 const CarsCard = ({ car }: { car: CarData }) => {
   const { mainImg, name, model, price, transmission, doors, fuel } = car;
   return (
-    <div className="rounded-md overflow-hidden">
+    <div className="rounded-md overflow-hidden h-[content-fit]">
       <img src={mainImg} alt={name} className="h-[45%] w-full" />
         <div className="px-[1.9rem] py-[1.2rem] border-[0.5px] border-gray-500" style={{'borderBottomLeftRadius': 'calc(var(--radius) - 2px);', 'borderBottomRightRadius': 'calc(var(--radius) - 2px);'}}>
         <div className="flex justify-between font-poppins text-3xl font-bold mt-3">

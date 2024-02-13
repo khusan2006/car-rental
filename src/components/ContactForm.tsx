@@ -20,10 +20,10 @@ const ContactForm = () => {
     console.log(data);
   };
   return (
-    <div className="py-28 px-10 flex bg-[url(assets/bg-contact.png)] gap-10 bg-center">
-      <div className="flex-1 pr-28">
-        <h3 className="font-poppins text-4xl font-bold mb-6">Need additional information?</h3>
-        <p className="text-base font-poppins font-medium text-gray-600 w-[80%] mb-8">
+    <div className="py-28 px-10 flex flex-col md:flex-row bg-[url(assets/bg-contact.png)] gap-10 bg-center">
+      <div className="flex-1 md:pr-28">
+        <h3 className="font-poppins text-4xl font-bold mb-6 text-center md:text-start">Need additional information?</h3>
+        <p className="text-base font-poppins font-medium text-gray-600 text-center md:text-start md:w-[80%] mb-8">
           A multifaceted professional skilled in multiple fields of research,
           development as well as a learning specialist. Over 15 years of
           experience.

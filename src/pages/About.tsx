@@ -8,9 +8,9 @@ const About = () => {
   return (
     <section className="flex flex-col ">
       <PagesHero name="about" />
-      <div className="flex w-[80vw] self-center mt-20">
+      <div className="flex flex-col md:flex-row w-[80vw] self-center mt-20">
         <div className="flex-1">
-          <img src={MainImg} alt="main image" />
+          <img src={MainImg} alt="main image" className="w-full md:w-auto" />
         </div>
         <div className="flex-1">
           <h3 className="font-poppins font-semibold text-2xl mb-3">

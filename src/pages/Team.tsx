@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <section>
       <PagesHero name="team" />
-    <div className="grid grid-cols-3 gap-20 px-24 py-20">
+    <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 gap-20 px-6 md:px-24 py-20">
         {TEAM_DATA.map(person => (
             <TeamCard person={person} />
         ))}
