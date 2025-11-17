@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "vehicleModels": "Avtomobil modellari",
+    "carCollection": "Avtomobillar to'plami",
+    "testimonials": "Sharhlar",
+    "ourTeam": "Bizning jamoa",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "subtitle": "O'zingizga mos avtomobilni toping",
+    "title": "Bizning avtomobil sotuvlarimiz bilan katta tejang",
+    "big": "katta",
+    "description": "Orzuingizdagi avtomobilni xarid qiling. Beqiyos narxlar, sifatli avtomobillar, moslashuvchan moliyalashtirish variantlari va yana ko'p narsalar.",
+    "browseCars": "Avtomobillarni ko'rish",
+    "learnMore": "Ko'proq bilish"
+  },
+  "plan": {
+    "subtitle": "Qanday ishlaydi",
+    "title": "Tez va oson avtomobil xaridi",
+    "description": "O'zingizga mos avtomobilni topish va xarid qilish uchun bu oddiy qadamlarni bajaring",
+    "step1": {
+      "title": "Avtomobilni tanlang",
+      "description": "Bizning keng do'konimizni ko'rib chiqing va ehtiyojlaringiz va byudjetingizga mos keladigan keng turdagi sifatli avtomobillardan tanlang."
+    },
+    "step2": {
+      "title": "Sotish bo'limi bilan bog'laning",
+      "description": "Bizning bilimdon va do'stona sotish jamoamiz har doim xaridingiz bilan bog'liq har qanday savol yoki muammolarda yordam berishga tayyor."
+    },
+    "step3": {
+      "title": "Yangi mashinangiz bilan ketib turing",
+      "description": "Xaridingizni yakunlang va yangi avtomobilingiz bilan ketib turing. Bizda keng turdagi sifatli avtomobillar mavjud."
+    }
+  },
+  "cars": {
+    "subtitle": "Avtomobil modellari",
+    "title": "Bizning avtomobillar do'konimiz",
+    "description": "Keyingi sarguzashtingiz yoki kundalik safaringiz uchun bizning ajoyib avtomobillarimizdan birini tanlang",
+    "seeAllCars": "Barcha avtomobillarni ko'rish"
+  },
+  "banner": {
+    "title": "Bizning sifatli avtomobil sotuvlarimiz bilan katta tejang!",
+    "subtitle": "Premium tanlov. Ishonchli diler.",
+    "support": "24/7",
+    "supportText": "Yordam."
+  },
+  "chooseUs": {
+    "subtitle": "Nima uchun bizni tanlashadi",
+    "title": "Siz topadigan eng yaxshi takliflar",
+    "description": "Bizning beqiyos takliflarimiz bilan eng yaxshi takliflarni toping. Biz sizga pulingiz uchun eng yaxshi qiymatni ta'minlashga sodiqmiz, shuning uchun siz bankni buzmasdan eng yuqori sifatli avtomobillar va xizmatlardan bahramand bo'lishingiz mumkin. Bizning takliflarimiz sizga eng yaxshi avtomobil xarid qilish tajribasini berish uchun mo'ljallangan, shuning uchun katta tejash imkoniyatingizni qo'ldan bermang.",
+    "browseInventory": "Do'konni ko'rish",
+    "benefit1": {
+      "title": "Mamlakat bo'ylab sayohat",
+      "description": "Mamlakat bo'ylab sarguzashtlaringiz uchun bizning eng yaxshi avtomobillarimiz bilan haydash tajribangizni keyingi darajaga ko'taring."
+    },
+    "benefit2": {
+      "title": "Hamma narsa narxga kiritilgan",
+      "description": "Bizning hamma narsa kiritilgan narx siyosatimiz bilan bitta qulay va shaffof narxda barcha kerakli narsalarni oling."
+    },
+    "benefit3": {
+      "title": "Yashirin to'lovlar yo'q",
+      "description": "Yashirin to'lovlar yo'q siyosatimiz bilan xotirjam bo'ling. Biz shaffof va halol narxlashga ishonamiz."
+    }
+  },
+  "about": {
+    "subtitle": "Kompaniya haqida",
+    "title": "O'zingizga mos avtomobilni topishda ishonchli hamkoringiz",
+    "description": "Avtomobil sanoatida ko'p yillik tajribaga ega bo'lib, biz sizga eng yaxshi avtomobil xarid qilish tajribasini ta'minlashga sodiqmiz. Bizning mutaxassislar jamoamiz ehtiyojlaringiz va byudjetingizga mos keladigan mukammal avtomobilni topishga yordam berishga bag'ishlangan.",
+    "feature1": "Keng turdagi sifatli avtomobillar",
+    "feature2": "Raqobatbardosh narxlar va moliyalashtirish variantlari",
+    "feature3": "Yordam berishga tayyor mutaxassislar sotish jamoasi",
+    "feature4": "15+ yillik sanoat tajribasi",
+    "feature5": "500+ mamnun mijozlar",
+    "feature6": "Keng qamrovli avtomobil tekshiruvi",
+    "carTypes": "Avtomobil turlari",
+    "carsSold": "Sotilgan avtomobillar",
+    "yearsExperience": "Yillik tajriba",
+    "yearsBadge": "Yillik tajriba"
+  },
+  "testimonials": {
+    "title": "Mijozlarimiz nima deyishadi",
+    "subtitle": "Sharhlar"
+  },
+  "team": {
+    "title": "Bizning jamoa",
+    "subtitle": "Mutaxassislarimiz bilan tanishing",
+    "description": "Bizning avtomobil mutaxassislaridan iborat sadoqatli jamoamiz sizga mukammal avtomobilni topishga yordam berish uchun shu yerda. Ko'p yillik tajriba va avtomobillarga bo'lgan ishtiyoq bilan, biz ajoyib xizmat ko'rsatish va sizga mos avtomobilni topishga sodiqmiz. Avtomobil xarid qilish safaringizda sizga yo'l ko'rsatadigan va butun avtomobil xarid qilish safaringiz davomida ajoyib xizmat ko'rsatadigan odamlar bilan tanishing."
+  },
+  "faq": {
+    "subtitle": "Tez-tez so'raladigan savollar",
+    "title": "Tez-tez so'raladigan savollar",
+    "description": "Bizning veb-saytimizdagi avtomobil xarid qilish jarayoni haqidagi tez-tez so'raladigan savollar: umumiy tashvishlar va so'rovlarga javoblar.",
+    "q1": "1. Avtomobil takliflarini solishtirishda nima maxsus?",
+    "a1": "Avtomobil takliflarini solishtirish muhim, chunki bu byudjetingiz va talablaringizga mos keladigan eng yaxshi taklifni topishga yordam beradi, pulingiz uchun eng ko'p qiymatni olishingizni ta'minlaydi. Turli variantlarni solishtirib, pastroq narxlar, qo'shimcha xizmatlar yoki yaxshi avtomobil modellarini taklif qiladigan takliflarni topishingiz mumkin. Turli dilerlardan narxlarni onlayn o'rganib va solishtirib, avtomobil takliflarini topishingiz mumkin.",
+    "q2": "2. Avtomobil takliflarini qanday topaman?",
+    "a2": "Turli dilerlardan narxlarni onlayn o'rganib va solishtirib, avtomobil takliflarini topishingiz mumkin. Bizning platformamiz kabi veb-saytlar narxlarni solishtirish va mavjud variantlarni ko'rish imkonini beradi. Shuningdek, maxsus takliflar yoki aksiyalar haqida xabar olish uchun elektron pochta yangiliklariga obuna bo'lish va ijtimoiy tarmoqlarda avtomobil dilerlarini kuzatish tavsiya etiladi.",
+    "q3": "3. Bunday past avtomobil narxlarini qanday topaman?",
+    "a3": "Oldindan bron qiling: Avtomobil xaridingizni oldindan bron qilish ko'pincha pastroq narxlarga olib kelishi mumkin. Bir nechta kompaniyalardan narxlarni solishtiring: Bir nechta avtomobil dilerlaridan narxlarni solishtirish uchun veb-saytlardan foydalaning. Chegirma kodlari va kuponlarni qidiring: Xarid narxini pasaytirish uchun foydalanishingiz mumkin bo'lgan chegirma kodlari va kuponlarni qidiring. Markazdan tashqari dilerdan xarid qilish ba'zida pastroq narxlarga olib kelishi mumkin."
+  },
+  "cta": {
+    "title": "O'zingizga mos avtomobilni topishga tayyormisiz?",
+    "description": "Bugun bizning sotish jamoamiz bilan bog'laning va biz sizga orzuingizdagi avtomobilni topishga yordam beramiz. Biz sizning avtomobil xarid qilish tajribangizni silliq va yoqimli qilish uchun shu yerdamiz.",
+    "call": "Qo'ng'iroq:",
+    "email": "Email:",
+    "browseInventory": "Do'konni ko'rish",
+    "scheduleTestDrive": "Test haydashni rejalashtirish"
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Aloqa",
+    "description": "Avtomobillarimiz yoki xizmatlarimiz haqida savollaringiz bormi? Biz yordam berishga tayyormiz! Biz bilan bog'laning va bizning jamoamiz imkon qadar tezroq sizga javob beradi.",
+    "needInfo": "Qo'shimcha ma'lumot kerakmi?",
+    "infoDescription": "Bizning tajribali sotish jamoamiz sizga mukammal avtomobilni topishga yordam berish uchun shu yerda. Avtomobil sanoatida 15 yildan ortiq tajriba bilan, biz ajoyib xizmat ko'rsatish va sizga mos avtomobilni topishga sodiqmiz.",
+    "fullName": "To'liq ism",
+    "email": "Email",
+    "tellUs": "Bizga ayting",
+    "sendMessage": "Xabar yuborish",
+    "messageSent": "xabaringiz yuborildi"
+  },
+  "carDetail": {
+    "startingAt": "Boshlang'ich narx",
+    "startingPrice": "boshlang'ich narx",
+    "financingNote": "Moliyalashtirish variantlari va maxsus takliflar haqida ma'lumot olish uchun biz bilan bog'laning",
+    "contactSalesTeam": "Sotish bo'limi bilan bog'lanish",
+    "model": "Model",
+    "brand": "Brend",
+    "year": "Yil",
+    "doors": "Eshiklar",
+    "ac": "Konditsioner",
+    "transmission": "Uzatma",
+    "fuel": "Yoqilg'i",
+    "rentPerDay": "kunlik ijaraga"
+  },
+  "collection": {
+    "title": "Avtomobillar to'plami",
+    "description": "Bizning keng do'konimizdagi sifatli avtomobillarni ko'rib chiqing",
+    "searchPlaceholder": "Avtomobil nomi, modeli yoki brendi bo'yicha qidiring...",
+    "filters": "Filtrlash:",
+    "resetFilters": "Filtrlarni tozalash",
+    "filterByBrand": "Brend bo'yicha filtrlash",
+    "filterByTransmission": "Uzatma bo'yicha filtrlash",
+    "filterByFuel": "Yoqilg'i bo'yicha filtrlash",
+    "sortBy": "Saralash",
+    "all": "Barchasi",
+    "priceAsc": "Narx: pastdan yuqoriga",
+    "priceDesc": "Narx: yuqoridan pastga",
+    "nameAsc": "Nomi: A dan Z gacha",
+    "nameDesc": "Nomi: Z dan A gacha",
+    "yearDesc": "Yil: yangilari birinchi",
+    "yearAsc": "Yil: eskilar birinchi",
+    "carsFound": "avtomobil topildi",
+    "filteredFrom": "filtrlangan",
+    "total": "jami",
+    "noCarsFound": "Sizning mezonlaringizga mos keladigan avtomobillar topilmadi.",
+    "backToCollection": "To'plamga qaytish",
+    "carNotFound": "Avtomobil topilmadi",
+    "previous": "Oldingi",
+    "next": "Keyingi",
+    "page": "Sahifa",
+    "viewDetails": "Tafsilotlarni ko'rish"
+  },
+  "footer": {
+    "companyName": "AVTO",
+    "rental": "IJARA",
+    "description": "Biz barcha haydash ehtiyojlaringiz uchun keng turdagi avtomobillarni taklif qilamiz. Bizda sizning ehtiyojlaringizga mos keladigan mukammal avtomobil bor.",
+    "company": "KOMPANIYA",
+    "newYork": "New York",
+    "careers": "Karyera",
+    "mobile": "Mobil",
+    "blog": "Blog",
+    "howWeWork": "Biz qanday ishlaymiz",
+    "workingHours": "ISH VAQTI",
+    "monFri": "Dush - Jum: 9:00 - 21:00",
+    "sat": "Shan: 9:00 - 19:00",
+    "sun": "Yak: Yopiq",
+    "subscription": "OBUNA",
+    "subscribeText": "So'nggi yangiliklar va yangilanishlar uchun email manzilingizga obuna bo'ling.",
+    "emailPlaceholder": "email manzilingizni kiriting",
+    "submit": "Yuborish",
+    "designBy": "Dizayn XpeedStudio tomonidan"
+  },
+  "language": {
+    "english": "Inglizcha",
+    "russian": "Ruscha",
+    "uzbek": "O'zbekcha"
+  }
+}
+

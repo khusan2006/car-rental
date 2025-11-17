@@ -1,32 +1,42 @@
 import Banner from "@/components/Banner";
-import BookCar from "@/components/BookCar";
 import Cars from "@/components/Cars";
-import ChooseUS from "@/components/ChooseUS";
-import Download from "@/components/Download";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Plan from "@/components/Plan";
 import ResponsiveNavbar from "@/components/ResponsiveNavbar";
-import TestimonialsComponent from "@/components/TestimonialsComponent";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
+import AboutSection from "@/components/AboutSection";
+import TeamSection from "@/components/TeamSection";
+import ContactSection from "@/components/ContactSection";
+import CTA from "@/components/CTA";
+import ChooseUS from "@/components/ChooseUS";
 import { FC } from "react";
 
 const Home: FC = () => {
   return (
-    <div className="bg-[url(assets/hero-bg.png)] bg-no-repeat  min-h-[150vh] bg-right-top">
-      <Navbar />
-      <ResponsiveNavbar />
-      <main>
-        <Hero />
-        <BookCar />
+    <div className="bg-gradient-to-br from-teal-100 via-teal-50 to-white bg-no-repeat min-h-[150vh] bg-right-top relative">
+      {/* Subtle pattern overlay for texture */}
+      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_50%_50%,_teal-600_1px,_transparent_1px)] bg-[length:50px_50px] pointer-events-none z-0"></div>
+      <div className="relative z-10">
+        <Navbar />
+        <ResponsiveNavbar />
+      </div>
+      <main className="relative z-10">
+        <section id="home">
+          <Hero />
+        </section>
         <Plan />
         <Cars />
         <Banner />
         <ChooseUS />
-        <TestimonialsComponent />
+        <AboutSection />
+        <TestimonialsSlider />
+        <TeamSection />
         <Faq />
-        <Download />
+        <CTA />
+        <ContactSection />
       </main>
       <Footer />
     </div>

@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "vehicleModels": "Vehicle Models",
+    "carCollection": "Car Collection",
+    "testimonials": "Testimonials",
+    "ourTeam": "Our Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Find your perfect car",
+    "title": "Save big with our car sales",
+    "big": "big",
+    "description": "Buy the car of your dreams. Unbeatable prices, quality vehicles, flexible financing options and much more.",
+    "browseCars": "Browse Cars",
+    "learnMore": "Learn more"
+  },
+  "plan": {
+    "subtitle": "How it works",
+    "title": "Quick & Easy Car Purchase",
+    "description": "Follow these simple steps to find and purchase your perfect vehicle",
+    "step1": {
+      "title": "Select Car",
+      "description": "Browse our extensive inventory and choose from a wide range of quality vehicles that meet your needs and budget."
+    },
+    "step2": {
+      "title": "Contact Sales Team",
+      "description": "Our knowledgeable and friendly sales team are always ready to help with any questions or concerns about your purchase."
+    },
+    "step3": {
+      "title": "Drive Away",
+      "description": "Complete your purchase and drive away in your new car. We've got you covered with our wide range of quality vehicles."
+    }
+  },
+  "cars": {
+    "subtitle": "Vehicle Models",
+    "title": "Our car inventory",
+    "description": "Choose from a variety of our amazing vehicles to purchase for your next adventure or daily commute",
+    "seeAllCars": "See All Cars"
+  },
+  "banner": {
+    "title": "Save big with our quality car sales!",
+    "subtitle": "Premium Selection. Trusted Dealership.",
+    "support": "24/7",
+    "supportText": "Support."
+  },
+  "chooseUs": {
+    "subtitle": "Why Choose Us",
+    "title": "Best Valued Deals You Will Ever Find",
+    "description": "Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality vehicles and services without breaking the bank. Our deals are designed to give you the ultimate car buying experience, so don't miss out on your chance to save big.",
+    "browseInventory": "Browse Inventory",
+    "benefit1": {
+      "title": "Cross Country Drive",
+      "description": "Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures."
+    },
+    "benefit2": {
+      "title": "All Inclusive Pricing",
+      "description": "Get everything you need in one convenient, transparent price with our all-inclusive pricing policy."
+    },
+    "benefit3": {
+      "title": "No Hidden Charges",
+      "description": "Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing."
+    }
+  },
+  "about": {
+    "subtitle": "About Company",
+    "title": "Your trusted partner in finding the perfect car",
+    "description": "With years of experience in the automotive industry, we are committed to providing you with the best car buying experience. Our team of experts is dedicated to helping you find the perfect vehicle that meets your needs and budget.",
+    "feature1": "Wide selection of quality vehicles",
+    "feature2": "Competitive pricing and financing options",
+    "feature3": "Expert sales team ready to help",
+    "feature4": "15+ years of industry experience",
+    "feature5": "500+ satisfied customers",
+    "feature6": "Comprehensive vehicle inspection",
+    "carTypes": "Car Types",
+    "carsSold": "Cars Sold",
+    "yearsExperience": "Years Experience",
+    "yearsBadge": "Years Experience"
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "subtitle": "Testimonials"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Meet Our Experts",
+    "description": "Our dedicated team of automotive professionals is here to help you find the perfect vehicle. With years of experience and a passion for cars, we're committed to providing exceptional service and finding the right car for you. Get to know the people who will guide you through your car buying journey and provide exceptional service throughout your car buying journey."
+  },
+  "faq": {
+    "subtitle": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Frequently Asked Questions About the Car Purchase Process on Our Website: Answers to Common Concerns and Inquiries.",
+    "q1": "1. What is special about comparing car deals?",
+    "a1": "Comparing car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car deals by researching online and comparing prices from different dealerships.",
+    "q2": "2. How do I find the car deals?",
+    "a2": "You can find car deals by researching online and comparing prices from different dealerships. Websites such as our platform allow you to compare prices and view available options. It is also recommended to sign up for email newsletters and follow car dealerships on social media to be informed of any special deals or promotions.",
+    "q3": "3. How do I find such low car prices?",
+    "a3": "Book in advance: Booking your car purchase ahead of time can often result in lower prices. Compare prices from multiple companies: Use websites to compare prices from multiple car dealerships. Look for discount codes and coupons: Search for discount codes and coupons that you can use to lower the purchase price. Purchasing from an off-location dealership can sometimes result in lower prices."
+  },
+  "cta": {
+    "title": "Ready to Find Your Perfect Car?",
+    "description": "Contact our sales team today and let us help you find the vehicle of your dreams. We're here to make your car buying experience smooth and enjoyable.",
+    "call": "Call:",
+    "email": "Email:",
+    "browseInventory": "Browse Inventory",
+    "scheduleTestDrive": "Schedule Test Drive"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get In Touch",
+    "description": "Have questions about our vehicles or services? We're here to help! Reach out to us and our team will get back to you as soon as possible.",
+    "needInfo": "Need additional information?",
+    "infoDescription": "Our experienced sales team is here to help you find the perfect vehicle. With over 15 years of experience in the automotive industry, we're committed to providing exceptional service and finding the right car for you.",
+    "fullName": "Full name",
+    "email": "Email",
+    "tellUs": "Tell us about it",
+    "sendMessage": "Send a message",
+    "messageSent": "your message has been sent"
+  },
+  "carDetail": {
+    "startingAt": "Starting at",
+    "startingPrice": "starting price",
+    "financingNote": "Contact us for financing options and special offers",
+    "contactSalesTeam": "Contact Sales Team",
+    "model": "Model",
+    "brand": "Brand",
+    "year": "Year",
+    "doors": "Doors",
+    "ac": "AC",
+    "transmission": "Transmission",
+    "fuel": "Fuel",
+    "rentPerDay": "rent per day"
+  },
+  "collection": {
+    "title": "Car Collection",
+    "description": "Browse our extensive inventory of quality vehicles",
+    "searchPlaceholder": "Search by car name, model, or brand...",
+    "filters": "Filters:",
+    "resetFilters": "Reset Filters",
+    "filterByBrand": "Filter by Brand",
+    "filterByTransmission": "Filter by Transmission",
+    "filterByFuel": "Filter by Fuel",
+    "sortBy": "Sort By",
+    "all": "All",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "nameAsc": "Name: A to Z",
+    "nameDesc": "Name: Z to A",
+    "yearDesc": "Year: Newest First",
+    "yearAsc": "Year: Oldest First",
+    "carsFound": "cars found",
+    "filteredFrom": "filtered from",
+    "total": "total",
+    "noCarsFound": "No cars found matching your criteria.",
+    "backToCollection": "Back to Collection",
+    "carNotFound": "Car not found",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "viewDetails": "View Details"
+  },
+  "footer": {
+    "companyName": "CAR",
+    "rental": "Rental",
+    "description": "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.",
+    "company": "COMPANY",
+    "newYork": "New York",
+    "careers": "Careers",
+    "mobile": "Mobile",
+    "blog": "Blog",
+    "howWeWork": "How we work",
+    "workingHours": "WORKING HOURS",
+    "monFri": "Mon - Fri: 9:00AM - 9:00PM",
+    "sat": "Sat: 9:00AM - 19:00PM",
+    "sun": "Sun: Closed",
+    "subscription": "SUBSCRIPTION",
+    "subscribeText": "Subscribe your Email address for latest news & updates.",
+    "emailPlaceholder": "enter your email address",
+    "submit": "Submit",
+    "designBy": "Design by XpeedStudio"
+  },
+  "language": {
+    "english": "English",
+    "russian": "Russian",
+    "uzbek": "Uzbek"
+  }
+}
+

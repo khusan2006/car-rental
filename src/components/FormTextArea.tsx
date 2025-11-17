@@ -9,7 +9,6 @@ import {
 import { Textarea } from "./ui/textarea";
 
 const FormTextArea = ({ form, name, label }: FormInputProps) => {
-  if (name === "newsletter") return;
   return (
     <FormField
       control={form.control}

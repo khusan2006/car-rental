@@ -9,7 +9,6 @@ import {
 import { Input } from "./ui/input";
 
 const FormInput = ({ form, label, name }: FormInputProps) => {
-    if(name === 'newsletter') return
   return (
     <FormField
       control={form.control}
@@ -18,7 +17,7 @@ const FormInput = ({ form, label, name }: FormInputProps) => {
         <FormItem>
           <FormLabel className=" pl-0 pb-[0.7rem] flex items-center font-semibold text-base capitalize">{label}</FormLabel>
           <FormControl>
-            <Input type={name === 'age' ? 'number' : ''} placeholder="" {...field} />
+            <Input type={name === 'email' ? 'email' : 'text'} placeholder="" {...field} />
           </FormControl>
 
           <FormMessage />

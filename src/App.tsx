@@ -2,12 +2,9 @@ import { Toaster } from "sonner";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Models from "./pages/Models";
-import Testimonials from "./pages/Testimonials";
-import Team from "./pages/Team";
-import Contact from "./pages/Contact";
-import PagesLayout from "./components/PagesLayout";
+import CarsCollection from "./pages/CarsCollection";
+import CarDetails from "./pages/CarDetails";
+import "./i18n/config";
 
 function App() {
   return (
@@ -21,14 +18,9 @@ function App() {
       <Toaster />
       <BrowserRouter>
         <Routes>
-          <Route path="/" index element={<Home />} />
-          <Route path="/" element={<PagesLayout />}>
-            <Route path="/about" element={<About />} />
-            <Route path="/models" element={<Models />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/cars" element={<CarsCollection />} />
+          <Route path="/cars/:id" element={<CarDetails />} />
         </Routes>
       </BrowserRouter>
     </Auth0Provider>
