@@ -1,8 +1,5 @@
 import { FC } from "react";
-import FirstIcon from "../assets/icon1 (2).png";
-import SecondIcon from "../assets/icon2 (2).png";
-import ThirdIcon from "../assets/icon3 (2).png";
-import { CheckCircle2, Users, Phone, Car } from "lucide-react";
+import { CheckCircle2, Phone, Car } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Plan: FC = () => {

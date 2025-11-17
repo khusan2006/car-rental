@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "./ui/button";
-import { TESTIMONIALS_DATA, TestimonialData } from "@/data/TestimonialsData";
+import { TESTIMONIALS_DATA } from "@/data/TestimonialsData";
 import Star from "@/assets/star-outline.svg";
 import { useTranslation } from "react-i18next";
 

@@ -9,7 +9,7 @@ import {
 import { Input } from "./ui/input";
 
 const FormInput = ({ form, label, name }: FormInputProps) => {
-  const inputType = name === "email" ? "email" : name === "phone" ? "tel" : "text";
+  const inputType = name === "phone" ? "tel" : "text";
 
   return (
     <FormField

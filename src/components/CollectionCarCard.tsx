@@ -1,5 +1,5 @@
 import { CarData } from "@/lib/types";
-import { Car, Fuel, Settings, Users, Calendar } from "lucide-react";
+import { Fuel, Settings, Users, Calendar } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 
