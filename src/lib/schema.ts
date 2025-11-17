@@ -4,15 +4,15 @@ export const ContactFormSchema = z.object({
   fullname: z.string({
     required_error: "please enter your first name",
   }),
-
-  email: z
+  phone: z
     .string({
-      required_error: "please enter your email address",
+      required_error: "please enter your phone number",
     })
-    .email({
-      message: "please enter valid email address",
+    .min(6, {
+      message: "phone number should be at least 6 characters",
     }),
-   text:  z.string({
-    required_error: "please enter your text",
+
+  description: z.string({
+    required_error: "please enter description",
   }),
 });

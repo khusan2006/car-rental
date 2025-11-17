@@ -114,9 +114,12 @@
     "infoDescription": "Our experienced sales team is here to help you find the perfect vehicle. With over 15 years of experience in the automotive industry, we're committed to providing exceptional service and finding the right car for you.",
     "fullName": "Full name",
     "email": "Email",
-    "tellUs": "Tell us about it",
+    "phone": "Phone number",
+    "description": "Description",
     "sendMessage": "Send a message",
-    "messageSent": "your message has been sent"
+    "sending": "Sending...",
+    "messageSent": "Your message has been sent",
+    "messageError": "Unable to send message. Please try again."
   },
   "carDetail": {
     "startingAt": "Starting at",

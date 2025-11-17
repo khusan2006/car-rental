@@ -41,7 +41,7 @@ const CTA = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-white text-white hover:bg-teal-700 font-semibold"
+              className="bg-white text-teal-700 hover:bg-gray-100 font-semibold border-2 border-gray-300"
               onClick={() => {
                 const element = document.getElementById('contact');
                 if (element) {

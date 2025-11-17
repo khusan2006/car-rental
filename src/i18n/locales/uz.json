@@ -114,9 +114,12 @@
     "infoDescription": "Bizning tajribali sotish jamoamiz sizga mukammal avtomobilni topishga yordam berish uchun shu yerda. Avtomobil sanoatida 15 yildan ortiq tajriba bilan, biz ajoyib xizmat ko'rsatish va sizga mos avtomobilni topishga sodiqmiz.",
     "fullName": "To'liq ism",
     "email": "Email",
-    "tellUs": "Bizga ayting",
+    "phone": "Telefon raqami",
+    "description": "Ta'rif",
     "sendMessage": "Xabar yuborish",
-    "messageSent": "xabaringiz yuborildi"
+    "sending": "Yuborilmoqda...",
+    "messageSent": "Xabaringiz yuborildi",
+    "messageError": "Xabarni yuborib bo'lmadi. Qayta urinib ko'ring."
   },
   "carDetail": {
     "startingAt": "Boshlang'ich narx",

@@ -10,17 +10,61 @@ import FormTextArea from "./FormTextArea";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 
+const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
+
+const sanitizeForHtml = (value: string) =>
+  value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
 const ContactForm = () => {
   const { t } = useTranslation();
   const form = useForm<ContactFormData>({
     resolver: zodResolver(ContactFormSchema),
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    toast.success(t('contact.messageSent'));
-    form.reset();
-    console.log(data);
+  const sendTelegramMessage = async (data: ContactFormData) => {
+    if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+      throw new Error("Telegram credentials are not configured");
+    }
+
+    const message = [
+      "🚗 <b>New Contact Request</b>",
+      `<b>Name:</b> ${sanitizeForHtml(data.fullname)}`,
+      `<b>Phone:</b> ${sanitizeForHtml(data.phone)}`,
+      `<b>Description:</b> ${sanitizeForHtml(data.description)}`,
+    ].join("\n");
+
+    const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+        parse_mode: "HTML",
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to send Telegram message");
+    }
   };
+
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      await sendTelegramMessage(data);
+      toast.success(t("contact.messageSent"));
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      toast.error(t("contact.messageError"));
+    }
+  };
+
+  const {
+    formState: { isSubmitting },
+  } = form;
   return (
     <div className="py-28 px-10 flex flex-col md:flex-row bg-[url(assets/bg-contact.png)] gap-10 bg-center">
       <div className="flex-1 md:pr-28">
@@ -39,15 +83,13 @@ const ContactForm = () => {
         </a>
       </div>
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="flex-1 flex flex-col gap-4"
-        >
-          <FormInput form={form} label={t('contact.fullName')} name="fullname" />
-          <FormInput form={form} label={t('contact.email')} name="email" />
-          <FormTextArea form={form} label={t('contact.tellUs')} name="text" />
-          <Button className="w-full">{t('contact.sendMessage')}</Button>
-
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 flex flex-col gap-4">
+          <FormInput form={form} label={t("contact.fullName")} name="fullname" />
+          <FormInput form={form} label={t("contact.phone")} name="phone" />
+          <FormTextArea form={form} label={t("contact.description")} name="description" />
+          <Button className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? t("contact.sending") : t("contact.sendMessage")}
+          </Button>
         </form>
       </Form>
     </div>

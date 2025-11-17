@@ -10,10 +10,10 @@ const Hero: FC = () => {
   const { t } = useTranslation();
   
   return (
-    <section className='px-6 flex-col-reverse md:flex-row flex items-center font-rubik min-h-[95vh]'>
-      <div className='flex flex-col justify-center items-center md:items-start pb-8 lg:flex-3'>
-        <h3 className='font-bold text-2xl mb-2'>{t('hero.subtitle')}</h3>
-        <h1 className='font-bold text-[2.8rem]/[60px] sm:text-[3.6rem]/[65px] font-poppins mb-4 text-center md:text-start'>
+    <section className='px-4 sm:px-6 flex flex-col-reverse lg:flex-row items-center gap-10 font-rubik min-h-[70vh] pt-12'>
+      <div className='flex flex-col justify-center items-center lg:items-start pb-8 lg:flex-1 max-w-2xl text-center lg:text-left'>
+        <h3 className='font-bold text-2xl sm:text-3xl mb-2'>{t('hero.subtitle')}</h3>
+        <h1 className='font-bold text-4xl leading-tight sm:text-[3rem]/[1.2] lg:text-[3.5rem]/[1.2] font-poppins mb-4'>
         {(() => {
           const title = t('hero.title');
           const bigWord = t('hero.big');
@@ -27,12 +27,13 @@ const Hero: FC = () => {
           ) : title;
         })()}
         </h1>
-        <p className='font-normal text-base text-gray-600 mb-6 w-[90%] sm:w-[70%] text-center md:w-[100%] md:text-start'>
+        <p className='font-normal text-base sm:text-lg text-gray-600 mb-6 w-full sm:w-[85%] lg:w-full'>
         {t('hero.description')}
         </p>
-        <div className='flex gap-4'>
+        <div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto'>
           <Button 
             size={'lg'}
+            className='w-full sm:w-auto'
             onClick={() => navigate('/cars')}
           >
             {t('hero.browseCars')} <CheckCircle2 className="ml-2 h-4 w-4" />
@@ -40,6 +41,7 @@ const Hero: FC = () => {
           <Button 
             variant={'secondary'} 
             size={'lg'}
+            className='w-full sm:w-auto'
             onClick={() => {
               document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
             }}
@@ -48,8 +50,8 @@ const Hero: FC = () => {
           </Button>
         </div>
       </div>
-      <div className='lg:flex-2'>
-        <img className='w-full md:h-4/5 lg:h-auto lg:w-[80rem]' src={heroCar} alt="picture of car" />
+      <div className='lg:flex-1 w-full flex justify-center'>
+        <img className='w-full max-w-[520px] h-auto object-contain drop-shadow-2xl' src={heroCar} alt="picture of car" />
       </div>
     </section>
   )

@@ -3,14 +3,16 @@ import { UseFormReturn } from "react-hook-form";
 
 export type ContactFormData = {
   fullname: string;
-  email: string;
-  text: string;
+  phone: string;
+  description: string;
 };
+
+export type ContactFormField = "fullname" | "phone" | "description";
 
 export type FormInputProps = {
   form: UseFormReturn<ContactFormData, undefined>;
   label: ReactNode;
-  name: "fullname" | "email" | "text";
+  name: ContactFormField;
 };
 
 export type CarData = {

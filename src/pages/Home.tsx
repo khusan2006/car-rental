@@ -19,11 +19,11 @@ const Home: FC = () => {
     <div className="bg-gradient-to-br from-teal-100 via-teal-50 to-white bg-no-repeat min-h-[150vh] bg-right-top relative">
       {/* Subtle pattern overlay for texture */}
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_50%_50%,_teal-600_1px,_transparent_1px)] bg-[length:50px_50px] pointer-events-none z-0"></div>
-      <div className="relative z-10">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10">
         <Navbar />
         <ResponsiveNavbar />
       </div>
-      <main className="relative z-10">
+      <main className="relative z-10 w-full px-4 sm:px-6 lg:px-10">
         <section id="home">
           <Hero />
         </section>
