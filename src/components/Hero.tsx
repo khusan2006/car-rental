@@ -51,7 +51,7 @@ const Hero: FC = () => {
         </div>
       </div>
       <div className='lg:flex-1 w-full flex justify-center'>
-        <img className='w-full max-w-[520px] h-auto object-contain drop-shadow-2xl' src={heroCar} alt="picture of car" />
+        <img className='w-full max-w-[520px] md:max-w-[800px] h-auto object-contain drop-shadow-2xl' src={heroCar} alt="picture of car" />
       </div>
     </section>
   )
